@@ -28,26 +28,26 @@ public class StudentdalApplicationTests {
 
 	}
 	
-//	@Test
-//	public void testFindStudentById() {
-//		Student student = studentRepository.findOne(1l);
-//		System.out.println(student);
-//	}
-//
-//	@Test
-//	public void testUpdateStudent() {
-//		Student student = studentRepository.findOne(1l);
-//		student.setFee(40d);
-//
-//		studentRepository.save(student);
-//	}
+	@Test
+	public void testFindStudentById() {
+		Student student = studentRepository.findOne(1l);
+		System.out.println(student);
+	}
+
+	@Test
+	public void testUpdateStudent() {
+		Student student = studentRepository.findOne(1l);
+		student.setFee(40d);
+
+		studentRepository.save(student);
+	}
 	
-//	@Test
-//	public void testDeleteStudent() {
-//		Student student = new Student();
-//		student.setId(1l);
-//		studentRepository.delete(student);
-//	}
+	@Test
+	public void testDeleteStudent() {
+		Student student = new Student();
+		student.setId(1l);
+		studentRepository.delete(student);
+	}
 
 }
 
