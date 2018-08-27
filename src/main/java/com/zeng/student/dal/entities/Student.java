@@ -19,14 +19,6 @@ public class Student {
 	private String name;
 	@Column(name = "scourse")
 	private String course;
-	
-	public Student(String name, String course, Double fee) {
-		super();
-		this.name = name;
-		this.course = course;
-		this.fee = fee;
-	}
-
 	@Column(name = "sfee")
 	private Double fee;
 	

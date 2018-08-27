@@ -15,11 +15,47 @@ public class StudentdalApplicationTests {
 
 	@Autowired
 	private StudentRepository studentRepository;
-	
+
 	@Test
 	public void testCreateStudent() {
-		
-		studentRepository.save(new Student("Guan", "Java Spring Boot", 89d));
+
+		Student student = new Student();
+		student.setName("John");
+		student.setCourse("Java Web Services");
+		student.setFee(30d);
+
+		studentRepository.save(student);
+
 	}
+	
+//	@Test
+//	public void testFindStudentById() {
+//		Student student = studentRepository.findOne(1l);
+//		System.out.println(student);
+//	}
+//
+//	@Test
+//	public void testUpdateStudent() {
+//		Student student = studentRepository.findOne(1l);
+//		student.setFee(40d);
+//
+//		studentRepository.save(student);
+//	}
+	
+//	@Test
+//	public void testDeleteStudent() {
+//		Student student = new Student();
+//		student.setId(1l);
+//		studentRepository.delete(student);
+//	}
 
 }
+
+
+
+
+
+
+
+
+
